@@ -1,0 +1,169 @@
+{
+  "dashboard": {
+    "totalUsers": 152,
+    "totalProducts": 89,
+    "totalOrders": 1245,
+    "totalIncome": 257500000
+  },
+
+  "users": [
+    {
+      "id": 1,
+      "name": "Dimas Febrian",
+      "email": "admin@admin.com",
+      "password": "admin123",
+      "role": "Admin",
+      "status": "Active",
+      "photo": "https://i.pravatar.cc/150?img=3"
+    },
+    {
+      "id": 2,
+      "name": "Budi Santoso",
+      "email": "staff@admin.com",
+      "password": "staff123",
+      "role": "Staff",
+      "status": "Active",
+      "photo": "https://i.pravatar.cc/150?img=5"
+    },
+    {
+      "id": 3,
+      "name": "Siti Rahma",
+      "email": "manager@admin.com",
+      "password": "manager123",
+      "role": "Manager",
+      "status": "Inactive",
+      "photo": "https://i.pravatar.cc/150?img=10"
+    }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "name": "Mechanical Keyboard",
+      "category": "Accessories",
+      "price": 850000,
+      "stock": 25,
+      "status": "Available",
+      "image": "https://picsum.photos/100?random=1"
+    },
+    {
+      "id": 2,
+      "name": "Gaming Mouse",
+      "category": "Accessories",
+      "price": 450000,
+      "stock": 40,
+      "status": "Available",
+      "image": "https://picsum.photos/100?random=2"
+    },
+    {
+      "id": 3,
+      "name": "27 Inch Monitor",
+      "category": "Monitor",
+      "price": 3250000,
+      "stock": 8,
+      "status": "Low Stock",
+      "image": "https://picsum.photos/100?random=3"
+    },
+    {
+      "id": 4,
+      "name": "Laptop ASUS",
+      "category": "Laptop",
+      "price": 12800000,
+      "stock": 6,
+      "status": "Available",
+      "image": "https://picsum.photos/100?random=4"
+    },
+    {
+      "id": 5,
+      "name": "Headset Logitech",
+      "category": "Audio",
+      "price": 920000,
+      "stock": 0,
+      "status": "Out of Stock",
+      "image": "https://picsum.photos/100?random=5"
+    }
+  ],
+
+  "reports": [
+    {
+      "id": 1,
+      "date": "2026-06-20",
+      "invoice": "INV-1001",
+      "customer": "Andi",
+      "total": 2500000,
+      "status": "Paid"
+    },
+    {
+      "id": 2,
+      "date": "2026-06-21",
+      "invoice": "INV-1002",
+      "customer": "Budi",
+      "total": 1750000,
+      "status": "Pending"
+    },
+    {
+      "id": 3,
+      "date": "2026-06-22",
+      "invoice": "INV-1003",
+      "customer": "Sinta",
+      "total": 6200000,
+      "status": "Paid"
+    },
+    {
+      "id": 4,
+      "date": "2026-06-23",
+      "invoice": "INV-1004",
+      "customer": "Rudi",
+      "total": 890000,
+      "status": "Cancelled"
+    }
+  ],
+
+  "chart": {
+    "labels": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "Mei",
+      "Jun",
+      "Jul",
+      "Agu",
+      "Sep",
+      "Okt",
+      "Nov",
+      "Des"
+    ],
+    "sales": [
+      120,
+      150,
+      180,
+      210,
+      250,
+      300,
+      280,
+      350,
+      390,
+      420,
+      460,
+      500
+    ]
+  },
+
+  "activity": [
+    "Admin login ke sistem",
+    "Produk baru berhasil ditambahkan",
+    "User baru telah terdaftar",
+    "Order #INV-1004 berhasil diproses",
+    "Backup database berhasil"
+  ],
+
+  "settings": {
+    "appName": "AdminPro Dashboard",
+    "version": "1.0.0",
+    "theme": "dark",
+    "language": "id",
+    "emailNotification": true,
+    "autoBackup": true
+  }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>AdminPro</h2>
+        </div>
+
+        <ul>
+
+            <li onclick="location.href='index.html'">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li onclick="location.href='users.html'">
+                <i class="fa-solid fa-users"></i>
+                Users
+            </li>
+
+            <li onclick="location.href='products.html'">
+                <i class="fa-solid fa-box"></i>
+                Products
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-chart-line"></i>
+                Reports
+            </li>
+
+            <li onclick="location.href='settings.html'">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+
+        <header>
+
+            <div>
+                <h1>Reports</h1>
+                <p>Laporan penjualan dan aktivitas sistem</p>
+            </div>
+
+            <button class="add-btn" id="addUserBtn">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Export PDF
+            </button>
+
+        </header>
+
+        <!-- Filter -->
+
+        <section class="filter-box">
+
+            <div class="filter-group">
+
+                <label>Dari</label>
+                <input type="date">
+
+            </div>
+
+            <div class="filter-group">
+
+                <label>Sampai</label>
+                <input type="date">
+
+            </div>
+
+            <button class="filter-btn">
+
+                <i class="fa-solid fa-filter"></i>
+
+                Filter
+
+            </button>
+
+        </section>
+
+        <!-- Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Total Penjualan</h3>
+                <h2>Rp125.000.000</h2>
+            </div>
+
+            <div class="card">
+                <h3>Total Order</h3>
+                <h2>1.250</h2>
+            </div>
+
+            <div class="card">
+                <h3>Produk Terjual</h3>
+                <h2>3.890</h2>
+            </div>
+
+            <div class="card">
+                <h3>Pelanggan Baru</h3>
+                <h2>325</h2>
+            </div>
+
+        </section>
+
+        <!-- Chart -->
+
+        <section class="chart-box">
+
+            <h2>Grafik Penjualan</h2>
+
+            <canvas id="reportChart"></canvas>
+
+        </section>
+
+        <!-- Table -->
+
+        <section class="table-box">
+
+            <h2>Riwayat Transaksi</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>No</th>
+                        <th>Tanggal</th>
+                        <th>Invoice</th>
+                        <th>Pelanggan</th>
+                        <th>Total</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="reportTable">
+
+                    <!-- Data dari dummy.json -->
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+    
+    <!-- Chart.js -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     
+    <!-- Chart Dashboard -->
+     <script src="js/chart.js"></script>
+     
+    <!-- Reports -->
+     <script src="js/reports.js"></script>
+
+    <script src="js/sidebar.js"></script>
+
+</body>
+
+</html>

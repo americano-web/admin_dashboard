@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>AdminPro</h2>
+        </div>
+
+        <ul>
+
+            <li onclick="location.href='index.html'">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li onclick="location.href='users.html'">
+                <i class="fa-solid fa-users"></i>
+                Users
+            </li>
+
+            <li onclick="location.href='products.html'">
+                <i class="fa-solid fa-box"></i>
+                Products
+            </li>
+
+            <li onclick="location.href='reports.html'">
+                <i class="fa-solid fa-chart-line"></i>
+                Reports
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+
+        <header>
+
+            <div>
+                <h1>Settings</h1>
+                <p>Kelola pengaturan aplikasi</p>
+            </div>
+
+        </header>
+
+        <!-- Profile -->
+
+        <section class="settings-card">
+
+            <h2>
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </h2>
+
+            <div class="profile-box">
+
+                <img src="https://i.pravatar.cc/150" alt="Admin">
+
+                <div class="profile-info">
+
+                    <label>Nama</label>
+                    <input id="adminName"
+                    type="text"
+                    value="Dimas Febrian">
+
+                    <label>Email</label>
+                    <input id="adminEmail"
+                    type="email"
+                    value="admin@admin.com">
+
+                    <button
+                    id="saveProfile"
+                    class="save-btn">
+                    
+                    Simpan Perubahan
+
+</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Password -->
+
+        <section class="settings-card">
+
+            <h2>
+                <i class="fa-solid fa-lock"></i>
+                Ubah Password
+            </h2>
+
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    placeholder="Password Lama">
+
+                <input
+                    type="password"
+                    placeholder="Password Baru">
+
+                <input
+                    type="password"
+                    placeholder="Konfirmasi Password">
+
+                <button class="save-btn">
+                    Update Password
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Preferences -->
+
+        <section class="settings-card">
+
+            <h2>
+                <i class="fa-solid fa-sliders"></i>
+                Preferences
+            </h2>
+
+            <div class="setting-item">
+
+                <span>Dark Mode</span>
+
+               <label class="switch">
+                <input id="darkMode"
+                type="checkbox">
+                <span class="slider"></span>
+            
+            </label>
+
+            </div>
+
+            <div class="setting-item">
+
+                <span>Email Notification</span>
+
+                <label class="switch">
+                    <input id="emailNotification"
+                    type="checkbox"
+                    checked>
+                
+                <span class="slider"></span>
+            
+            </label>
+        </div>
+
+            <div class="setting-item">
+
+                <span>Auto Backup</span>
+
+                <label class="switch">
+                    <input id="autoBackup"
+                    type="checkbox"
+                    checked>
+                    
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        </section>
+
+        <!-- System -->
+
+        <section class="settings-card">
+
+            <h2>
+                <i class="fa-solid fa-server"></i>
+                System Information
+            </h2>
+
+            <table class="system-table">
+
+                <tr>
+                    <td>Version</td>
+                    <td>1.0.0</td>
+                </tr>
+
+                <tr>
+                    <td>Framework</td>
+                    <td>HTML CSS JavaScript</td>
+                </tr>
+
+                <tr>
+                    <td>Database</td>
+                    <td>dummy.json</td>
+                </tr>
+
+                <tr>
+                    <td>Status</td>
+                    <td><span class="status active">Online</span></td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="js/settings.js"></script>
+    <script src="js/sidebar.js"></script>
+
+</body>
+
+</html>
